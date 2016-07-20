@@ -1,8 +1,9 @@
-Title: Minimax in (lazy) Racket
-Date: 2016-07-05T21:20:19
-Tags: AI, Racket, Programming languages
+    Title: Minimax in lazy Racket
+    Date: 2016-07-20T12:34:50
+    Tags: Racket, A.I., game playing, hash langs
 
-Today, I implemented a generic [minimax](https://en.wikipedia.org/wiki/Minimax) algorithm in Racket.
+Recently, I implemented a generic [minimax](https://en.wikipedia.org/wiki/Minimax) algorithm in Racket.
+The code is on [Github](https://github.com/v-for-vincent/racket-minimax).
 I'm pretty happy with the code itself, which also includes pruning and loop checking against ancestor nodes (not other nodes, as that might not be worth the performance hit).
 
 What's important about this bit of code, to me, is that it made Racket "click".
@@ -15,7 +16,7 @@ But the implications of doing that became clear when I first tested my code in a
 With Racket, you get fantastic language interop.
 You use different languages, all implemented in Racket, for different tasks and you can combine them.
 And you don't need some gruesome foreign function interface.
-Hell, you can even use the debugger on all of these languages, because they expand to Racket.
+You get the exact syntax you want, but in the end it's all Racket.
 
 I'm still new to the language, but really realizing this has made it my favourite language.
 I'm going to be writing a lot more of it in the future.
